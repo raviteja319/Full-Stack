@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tags for additional information about the web page purpose to resduce the SEO(Search Engine Optimization) -->
+    <meta name="description" content="This is a basic HTML page">
+    <meta name="keywords" content="HTML, basic, tutorial">
+    <!-- title is used for the title of the web page -->
     <title>Basic working of HTML</title>
 </head>
 <body>
-    <div>
         <!-- heading tags -->
         <h1>Heading</h1>
         <h2>Sub Heading</h2>
@@ -14,16 +17,456 @@
         <h4>Sub Sub Sub Heading</h4>
         <h5>Sub Sub Sub Sub Heading</h5>
         <h6>Sub Sub Sub Sub Sub Heading</h6>
+        <hr>
+        <!-- horizontal rule to separate sections -->
+        <!-- block tags (div, p, h1-h6, hr) they occupy the full width of the view port -->
+        <!-- inline tags (span, i, b, image, input) only size is higlighted -->   
+        <!-- paired tags <p> and </p>, <span> and </span>, <div> and </div>, <a> and </a> -->
+        <!-- Unpaired tagsor self closing tags <br>, <hr>, <img> -->
+        <!-- attributes in the html elements (href, src, alt, title, id, class, style, lang, dir, etc.) they give additional information about tags -->
+        <!-- a tag  is used to create hyperlinks attribute for a tags _blank, _self, _parent, _top -->
+        <!-- Diffrent tags -->
+        <a href="https://www.google.com" target="_blank">Google</a>
         <p>test case</p>
         <p>This is a paragraph.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, repellendus?</p>
+        <br>
         <button>Click Me</button>
-        
+        <br>
         <!-- attributes in the html elements, such as
          href, src, alt, title, id, class, style, lang, dir, etc. -->
-
-        <img src="../../../Pictures/IMG_20221227_214202.jpg" alt="Test Image">
-        
         <a href="https://chatgpt.com/c/6a1fa213-9914-8321-97b7-ed1124903216">Link</a>
-    </div>
-</body>
+        <br>
+        <a href="https://chatgpt.com/c/6a1fa213-9914-8321-97b7-ed1124903216" target="_self">ChatGPT</a>
+        <br>
+        <a href="index.html" target="_blank">test</a>
+        <br>
+        <a href="https://www.google.com/search?q=tigers&rlz=1C1ONGR_enIN1000IN1000&oq=tigers&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyCggBEC4YsQMYgAQyDQgCEAAYkQIYgAQYigUyCggDEAAYsQMYgAQyDQgEEAAYgwEYsQMYgAQyCggFEAAYsQMYgAQyCggGEAAYsQMYgAQyBwgHEAAYgAQyBggIEAAYAzIHCAkQLhiABNIBCDE5MDJqMGo0qAIAsAIA&sourceid=chrome&ie=UTF-8" target="_blank"><img src="https://thumbs.dreamstime.com/b/tiger-wild-winter-nature-amur-tiger-running-snow-action-wildlife-scene-danger-animal-cold-winter-tajga-russ-84783074.jpg" width="50"></a>
+        <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mangekyou_Sharingan_Sasuke.svg/1280px-Mangekyou_Sharingan_Sasuke.svg.png" alt="stylized red and black mangekyou sharingan eye symbol from anime" height="200px" width="200px">
+        <hr>
+        <!-- sub and sup for writing suffix and prefix for words-->
+        <p>NH<sub>3</sub>O<sub>4</sub></p>
+        <p>E = mc<sup>2</sup></p>
+        <pre>This is a    preformatted text.</pre>
+        <!-- pre tag for spacing -->
+        <!-- another spacing option  &nbsp; 2 spaces, 4 spaces &emsp-->
+        <span>ama baboie &nbsp; record </span>
+        <span>ama baboie &emsp; record </span>
+        <hr>
+        <!-- for image img tag and it is given in figure tag <figure> figure caption for the caption of the image {src as path of the image abslote path address  }-->
+        <img src="../../../Pictures/Saved Pictures/lord-ganesh.jpg" alt="portrait of eswar"/>
+        <figure>
+            <img src="https://m.media-amazon.com/images/I/81rDQXC3ozL.jpg" alt="lord Ganesh" width="100">
+            <figcaption>Lord Ganesh</figcaption>
+        </figure>
+        <hr>
+        <!-- Lists order and unordered -->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <ol>
+            <li>Sub Item 1</li>
+            <li>Sub Item 2</li>
+            <li>Sub Item 3</li>
+        </ol>
+        <!-- attribute in lists type and start-->
+        <ol type="A" start="5">
+            <li>Sub Item 1</li>
+            <li>Sub Item 2</li>
+            <li>Sub Item 3</li>
+        </ol>
+        <ul type="square">
+            <li>apple</li>
+            <li>Banana</li>
+            <li>Mango</li>
+            <li>Goa</li>
+        </ul>
+        <dl>
+            <dt>Movie</dt>
+            <dd>Inception</dd>
+            <dd>Interstellar</dd>
+            <dd>The Dark Knight</dd>
+            <dt>Grocery</dt>
+            <dd>Apples</dd>
+            <dd>Bananas</dd>
+        </dl>
+        <hr>
+        <!-- Audio and video its attributes src, type, controls, autoplay, loop, muted -->
+        <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls autoplay loop muted></audio>
+        <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls></audio>
+        <audio controls><source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg"></audio>
+        <audio src="./../../../../Downloads/Hellallallo.mp3" controls autoplay loop muted></audio>
+
+        <br>
+        <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls autoplay loop muted width="320" height="240"></video>
+        <video src="https://www.pexels.com/download/video/12703249/" type="video/mp4" controls width="320" height="240"></video>
+        <hr>
+            <!-- iframe tag for embedding another web page inside the current web page -->
+             <!-- to copy the embedded code for the pages or from the youtube -->
+            <iframe src="./basicstrutured.html"> </iframe>
+            <iframe src="https://youtu.be/KwcBH-Vgv2E" height="315" width="420"> </iframe>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe id="js_video_iframe" src="https://jumpshare.com/embed/ovyeUAK8bR9szbBjgh1T" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30417.881866118834!2d78.4859136!3d17.6390144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb88a175784853%3A0x6e658cb81856b6b1!2sSri%20Ramalingeshwara%20Swamy%20Temple!5e0!3m2!1sen!2sin!4v1781338143835!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe SRC="https://hgcloud.to/e/sd6mpm9l7h1s" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></iframe>
+            <hr>
+            <p>semantic tags and nonsemantic tags</p>
+            <!-- semantic (carry the information from the user and developer and along with the browser{header, aside, footer, main, section, nav, article})and nonsemantic tags(along with this div and span tag is commonly used)  -->
+            <!-- standared format fopr the code -->
+        <!--<header>
+        <h1>Heading</h1>
+    </header>
+    <nav></nav>
+    <main>  
+        <section></section>
+    <section>
+        <div>
+            <h2>Sub Heading</h2>
+            <p>This is a paragraph.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, repellendus?</p>
+            <audio src="./../../../../Downloads/Hellallallo.mp3" controls></audio>
+        </div> 
+    </section>
+    <figure>
+        <figcaption>
+            <img src="https://m.media-amazon.com/images/I/81rDQXC3ozL.jpg" alt="lord Ganesh" width="100">
+        </figcaption>
+    </figure>  
+    <aside>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id ea dolorum enim consequuntur dolores nobis, error debitis aperiam veritatis odio illo iste earum quaerat, iusto rerum necessitatibus maiores cum reprehenderit.
+        </p>
+        <span>wall</span>  
+    </aside>      
+    <section></section>          
+    </main>
+    <footer>
+        <p>Footer</p> 
+   </footer> -->
+    <!--full structure format of html code aside(used for the blog) nav(to navgate the sections give to scrolling bar of the code), section(for the images and content which are linked to the content) -->
+    <hr>
+    <!-- table -->
+    <table border="1">
+        <tr>
+            <th>Heading 1</th>
+            <th>Heading 2</th>
+            <th>Heading 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+            <td>Row 1, Column 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+            <td>Row 2, Column 3</td>
+        </tr>
+        <table border="1">
+            <tr>
+                <th>Sr No.</th>
+                <th>Name</th>
+                <th colspan="2">Hobby</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td colspan="2" align="center">Reading</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bob</td>
+                <td>Designer</td>
+                <td>Photography</td>
+            </tr>
+        </table>
+        <table border="1">
+            <tr>
+                <th>Sr No.</th>
+                <th>Name</th>
+                <th>Hobby</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Alice</td>
+                <td>Reading</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td rowspan="2">Bob</td>
+                <td>Swimming</td>
+            </tr>
+            <tr>
+                <td>Photography</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th colspan="4">class</th>
+            </tr>
+            <tr>
+                <td>First</td>
+                <td rowspan="2">a</td>
+                <td rowspan="2">b</td>
+                <td rowspan="2">c</td>
+                <td rowspan="2">d</td>
+            </tr>
+            <tr>
+                <td>Second</td>
+            </tr>
+            <tr>
+                <td>Third</td>
+                <td colspan="4">a</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Fourth</td>
+                <td>a+</td>
+                <td rowspan="2">b</td>
+                <td rowspan="2">c</td>
+                <td rowspan="2">d</td>
+            </tr>
+            <tr>
+                <td>a</td>
+            </tr>
+        </table>
+        <hr>
+        <!-- Table with header, body, and footer standard table -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="5">Personal Information of the users</th>
+                </tr>
+                <tr>
+                    <th>Sr No.</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Hobby</th>  
+                    <th>Bank Balance</th>  
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td>1</td>
+                    <td>Alice</td>
+                    <td>123-456-7890</td>
+                    <td>Reading</td>
+                    <td>2560</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">2</td>
+                    <td rowspan="3">Bob</td>
+                    <td>987-654-3210</td>
+                    <td>Swimming</td>
+                    <td rowspan="3">4560</td
+                </tr>
+                <tr>
+                    <td rowspan="2">767-506-6812</td>
+                    <td>Photography</td>
+                </tr>
+                <tr>
+                    <td>Painting</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">3</td>
+                    <td rowspan="2">Charlie</td>
+                    <td>555-555-5555</td>
+                    <td>Cooking</td>
+                    <td rowspan="2">7890</td>
+                </tr>
+                <tr>
+                    <td>444-444-4444</td>
+                    <td>Gaming</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr align="center">
+                    <td colspan="4">Total 3 entries</td>
+                    <td>15010</td>
+                </tr>
+            </tfoot>
+        </table>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th rowspan="3">Day</th>
+                    <th colspan="3">Seminar</th>
+                </tr>
+                <tr>
+                    <th colspan="2">Shedule</th>
+                    <th rowspan="2">Topic</th>
+                </tr>
+                <tr>
+                    <th>Morning</th>
+                    <th>Evening</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Monday</td>
+                    <td rowspan="2">9:00 AM</td>
+                    <td rowspan="2">2:00 PM</td>
+                    <td >Web Development</td>
+                </tr>
+                <tr>
+                    <td>Data Science</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Tuesday</td>
+                    <td >10:00 AM </td>
+                    <td >12:00 PM</td>
+                    <td rowspan="2">Machine Learning</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">1:00 PM </td>
+                    <td rowspan="2">4:00 PM</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Artificial Intelligence</td>
+                </tr>
+                 <tr>
+                    <td >5:00 PM</td>
+                    <td >7:00 PM</td>
+                </tr> *
+                 
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    <hr>
+    <!--nav  bar is used for the navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">Section 1</a></li>
+            <li><a href="#">Section 2</a></li>
+            <li><a href="#">Section 3</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <!-- clicking the alink it redirects the the image or the link of the text displays in the view port -->
+    <h2>The Hotel</h2>
+    <a href="#redirect">Menu Card </a>
+    <br>
+    <a href="#redirecta">Contact US</a>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse deserunt, soluta hic optio iusto maxime saepe tenetur 
+        veritatis repellendus facere odio delectus, nihil quo! Assumenda veritatis minus recusandae ipsa consectetur? Saepe quo
+         molestiae optio aliquam maxime quae odit iusto, quod facere aspernatur soluta id amet quisquam accusantium corporis veniam ab?
+    </p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse deserunt, soluta hic optio iusto maxime saepe tenetur 
+        veritatis repellendus facere odio delectus, nihil quo! Assumenda veritatis minus recusandae ipsa consectetur? Saepe quo
+         molestiae optio aliquam maxime quae odit iusto, quod facere aspernatur soluta id amet quisquam accusantium corporis veniam ab?
+    </p>
+    
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse deserunt, soluta hic optio iusto maxime saepe tenetur 
+        veritatis repellendus facere odio delectus, nihil quo! Assumenda veritatis minus recusandae ipsa consectetur? Saepe quo
+         molestiae optio aliquam maxime quae odit iusto, quod facere aspernatur soluta id amet quisquam accusantium corporis veniam ab? ht1tp
+    </p>
+    <h3>British Paper</h3>
+    <h3>British Paper</h3>
+    <h3>British Paper</h3>
+    <h3>British Paper</h3>
+    <h3>British Paper</h3>
+    <h3>British Paper</h3>
+    <h3>British Paper</h3>
+    <h3>British Paper</h3>
+    <section id="redirect"><img src="https://img.pikbest.com/templates/20240711/food-menu-card-template-design-for-restaurants-design_10662181.jpg!bw700" alt="Menu Card"></section>
+     <h3>British Paper</h3>
+    <h3>British Paper</h3>
+    <h3>British Paper</h3>
+    <h3>British Paper</h3>
+    <h3>British Paper</h3>
+    <h3>British Paper</h3>
+    <h3>British Paper</h3>
+    <span id="redirecta">raviteja@gamil.com</span>
+    <hr>
+    <!-- Forms  are use to right the input text-->
+     <form>
+        <input type="name"><br>
+        <input type="email"><br>    
+        <input type="date"><br> 
+        <input type="color"><br> 
+        <input type="number"><br> 
+        <input type="file"><br> 
+        <input type="password"><br> 
+        <input type="radio"><br> 
+        <input type="url"><br> 
+        <input type="range"><br> 
+        <input type="checkbox"><br> 
+        <br>
+     </form>
+    <!-- validation is a kind of input given to user. It gives client side clarification. Multiple server side validations can be performed. Warning messages can be displayed to the user when text is incorrectly given. -->
+    <!-- for (it a attribute used for labeling form elements )and id(urniversial attribute for identifying elements) for and id were is used in the past later the UI/Ux got updated -->
+    <!-- <input type="text" id="name" name="name"> name attribute purpose is to identify the input field and store the data; otherwise, the ? at the end of the URL file:///C:/Users/Datti%20Eswara%20Rao/OneDrive/Documents/Full_stack/employee-management-system/basic.html?  -->
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"> <br>
+        <label for="emailText">Email</label>
+        <input type="email" id="emailText" name="email"> <br>
+        <label for="passwordtype">Password</label>
+        <input type="password" id="passwordtype" name="password"> <br>
+        <label for="numbertext">Age</label>
+        <input type="number" id="numbertext" name="number"> <br>
+        <label for="urltext">Url</label>
+        <input type="url" id="urltext" name="url"> <br>
+        <label for="dateOfBirth">Date of Birth</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth"> <br>
+        <label for="file">File</label>
+        <input type="file" id="file" name="file"> <br>
+        <label for="color">Colour</label>
+        <input type="color" id="color" name="color"> <br>
+        <label for="range">Range</label>
+        <input type="range" id="range" name="range"> <br>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="male"><br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="female"><br>
+        <label for="subscribe">Subscribe to newsletter</label>
+        <input type="checkbox" name="subscribe" value="yes"><br>  
+    </form>
+    <!-- Form with placeholders is updated form UI/UX graphical developed and data is stored in backend directly -->
+    <!-- forms important attribute methods and actions we have: GET, POST, PUT, DELETE, PATCH (get and post are most commanly   used for sending data to the server) modern web are replaced with more secure alternatives with placeholders instead of labels -->
+    <form>
+        <input type="text" placeholder="Enter your name"> <br>
+        <input type="email" placeholder="Enter your email"> <br>
+        <input type="password" placeholder="Enter your password"> <br>
+        <input type="number" placeholder="Enter your age"> <br>
+        <input type="date" placeholder="Enter your date of birth"> <br>
+        <input type="file" placeholder="Upload a file"> <br>
+        <input type="color" placeholder="Choose a color"><br>
+        <input type="range" placeholder="Choose a value"><br>
+        <input type="radio" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="checkbox" name="subscribe" value="yes"><br>  
+        <label for="subscribe">Subscribe to newsletter</label><br>
+        <input type="submit" value="Submit"><br>
+    </form>
+    <!--  -->
+    <!-- form methods with Get (to get information from the server(user))-->
+    <form method="get">
+        <input type="text" name="name" placeholder="Enter your name"><br>
+        <input type="email" name="email" placeholder="Enter your email"><br>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- form methods with Post (to send information to the server(user))-->
+    <form method="post">
+        <input type="text" name="name" placeholder="Enter your name"><br>
+        <input type="email" name="email" placeholder="Enter your email"><br>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- the data is given in the post request can be accessed on the server-side it cannot be found in the URL for the security reasons this can be used for sensitive information -->
+    <!-- the given data is can be visible in the by inspecting the element >select Network > now select the html form name is given > click on the payload >we can found the data information -->
+    <!-- forms important attribute action (after submiting the form it will redirect to the html page directed )-->
+     <form method="get" action="basicstrutured.html">
+        <input type="text" placeholder="Enter the Name" name="name"><br>
+        <input type="number" placeholder="Enter the age" name="Age"><br>
+        <button type="submit">Submit</button>
+     </form>
+     <!-- any input value is given after the submit button the value is not take  -->
+      <!-- par value attributes (required(details need to enter), value(the value is given alredy in that box we can edit or change the defalt value), disabled, readonly) -->
+    </body>
 </html>
