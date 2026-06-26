@@ -534,10 +534,14 @@
                 <input type="email" name="Email" placeholder="Enter the Email" required><br>
                 <input type="number" name="Phone" placeholder="Enter the Phone Number" required minlength="10" maxlength="10"><br>
                 <textarea name="Address" placeholder="Enter the Address" required minlength="10" maxlength="100" cols="30" rows="5"></textarea><br>
-                <input type="checkbox" name="Languages" value="English"> English
-                <input type="checkbox" name="Languages" value="Hindi"> Hindi
-                <input type="checkbox" name="Languages" value="Telugu"> Telugu
-                <input type="checkbox" name="Languages" value="Other" id="otherLanguage"> Other<br>
+                <input type="checkbox" name="Languages" value="English" id="lang1"> 
+                <label for ="lang1">English</label>
+                <input type="checkbox" name="Languages" value="Hindi" id="lang2"> 
+                <label for ="lang2">Hindi</label>
+                <input type="checkbox" name="Languages" value="Telugu" id="lang3"> 
+                <label for ="lang3">Telugu</label>
+                <input type="checkbox" name="Languages" value="Other" id="otherLanguage">
+                <label for ="otherLanguage">Other</label><br>
                 <textarea  name="OtherLanguages" placeholder="Enter the Other Languages" required minlength="10" maxlength="100" cols="20" rows="4"></textarea><br>
                 <!--this a textarea for other languages perfomed using the JS if other is selected it get displayed -->
                 <script>
@@ -558,6 +562,9 @@
                 <label for="foodPreferencestype">
                     Food Preferences:
                     <select name="foodPreferences" id="foodPreferencestype">
+                        <optgroup label="Select Food Type">
+                            <option value="">--Select--</option>
+                        </optgroup>
                         <optgroup label="Vegetarian">
                             <option value="Veg">Paneer</option>
                             <option value="Veg">Mushroom</option>
