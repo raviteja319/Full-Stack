@@ -1,0 +1,30 @@
+.div1text{
+    text-align: center;
+    background-color: rgb(62, 61, 42);
+}
+p{
+    text-align: start;
+    color: rgb(216, 204, 37);
+}
+.textCorrectionHead{
+    text-align: center;
+    background-color: #8faf91;
+}
+#heading1{
+    text-align: center;
+    color: rgb(216, 2, 2);
+  
+}
+
+#heading2{
+    color: #45ff50;
+}
+#subhed{
+    text-align: end;
+    color: #8faf91;
+}
+/* text align is the align ment of the text given */
+/* right, left, center, start, left */
+/*  text-align is follow parent child method if a div tag class is given center all the heading and paragrapgh text are aligned at center  */
+/* span is taken width is size of the text given */
+

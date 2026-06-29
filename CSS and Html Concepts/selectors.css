@@ -1,0 +1,17 @@
+/* selectors: universal selector *{ } it selects all the elements in the document 
+              element selector h1 or div or p p{ } selects all p elements 
+              class selector .myClass{ } selects all elements with class="myClass" selects only particular class
+              id selector #myId{ } selects the element with id="myId" selects only one  */ 
+*{
+    background-color: rgb(235, 220, 220);
+    color: rgb(236, 0, 0);
+}
+p{
+    color: rgb(0, 0, 0);
+}
+.typeOne{
+    color: rgb(69, 214, 188);
+}
+#paragraph1{
+    color: rgb(27, 7, 202);
+}

@@ -1,0 +1,54 @@
+/* the CSS has 3 types*/
+/*Inline (the css changes are done in the element line of html body section) 
+Example: 
+    <body>
+        <p style="color: rgb(0, 255, 13);">Hello, World!</p>
+    </body>*/
+
+/*<style>(the changes are made in html code by style Tag of head section)
+Example:
+    <head>
+        <style>
+            p{
+                color: blue;
+                font-size: 20px;
+                line-height: 1.5;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Hello, World!</p>
+    </body>*/
+
+/*External Stylesheets(the changes are made using the css by linking css to the html)
+Example:
+HTML code:
+    <head>
+        <link rel="stylesheet" href="introcss.css">
+    </head>
+    <body>
+        <p>Hello, World!</p>
+    </body>
+CSS code:
+    p{
+        color: blue;
+        font-size: 20px;
+        line-height: 1.5;
+    }*/
+/* CSS works on a waterfall model; the last one applied takes precedence */
+/* color: concept deals with rgb(0, 0, 255) and hex codes */
+/* rgb (red, green, blue) the color values starts from 0 to 255 */
+/* hex codes are represented as #RRGGBB the color values range from 00 to FF has 16 distinct values (0-9, A-F) # is given a special meaning at start*/
+h3{
+    color: rgb(184, 51, 93);
+    font-size: 20px;
+    line-height: 1.5;
+}
+body{
+    background-color: rgb(195, 180, 169);
+}
+h4{
+    color: #a41787;
+    font-size: 20px;
+    line-height: 1.5;
+}
