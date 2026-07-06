@@ -1,0 +1,176 @@
+/* Units in CSS the units are Absolute(px, cm, mm, inchs) and Relative(%, em, rem) */
+/* % it often used to define the size of the element inherited from the parent */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* the child box width is occpied based on the parent size */
+/* parent size 100px child 30% then child size is 30px */
+/* parent size 200px child 50% then child size is 100px */
+#box1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+#box2{
+    height: 50%;
+    width: 50%;
+    background-color: aqua;
+}
+/* the parent text is occupied text space and followed to the child */
+#box3{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+#box4{
+    height: 50%;
+    width: 50%;
+    background-color: yellow;
+}
+/* margin given to the parent not given to the child then its applied to parent only */
+#box5{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 20px;
+}
+#box6{
+    height: 50%;
+    width: 50%;
+    background-color: aqua;
+   
+}
+/* the margin is set for only child the parent doesnt have margin */
+/* the child margin starts from the parent box  */
+#box7{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+#box8{
+    height: 50%;
+    width: 50%;
+    background-color: yellow;
+    margin: 10px;
+}
+/*the parent margin is set for 20px the child margin set for 50%*/
+/* parent has seperate margin of 20px */
+/* the child margin starts from the parent box 50% margin means parents width 100px 50% not from the parents length */
+#box9{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 20px;
+}
+#box10{
+    height: 50%;
+    width: 50%;
+    background-color: aqua;
+    margin: 50%;
+}
+/*only left side the margin is given to the child as width is 100px its margin 10% is 10px*/
+#box11{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+#box12{
+    height: 50%;
+    width: 50%;
+    background-color: yellow;
+    margin-left: 10%;
+}
+
+
+/* em the inheritence of the parent size same to the child */
+/* if parent font-size: 25px then child font-size: 1em(25px) same as the parents size, 2em double of the parents size */
+#embox1{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    font-size: 20px;
+}
+#embox2{
+    height: 50%;
+    width: 50%;
+    background-color: orange;
+    font-size: 1em;
+}
+/* the font-size is doubled as parent is 20px and child is 2em=2*20=40px */
+#embox3{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(204, 14, 179);
+    font-size: 20px;
+}
+#embox4{
+    height: 50%;
+    width: 50%;
+    background-color: rgb(48, 192, 37);
+    font-size: 2em;
+}
+/* em property is applied to width */
+/* parent child-size is 2em(2*20px) as for the width: 6em (the size of child text(2em*6em=12em(12*20px=240px)) )  */
+#embox5{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    font-size: 20px;
+}
+#embox6{
+    height: 50%;
+    width: 6em;
+    background-color: orange;
+    font-size: 2em;
+}
+/* the height and width had changed (chlid box font-size is 2em=30px )so child box height(2em*4em=8em(120px) child box width(5em*2em=10em(150px)) */
+#embox7{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(204, 14, 179);
+    font-size: 15px;
+}
+#embox8{
+    height: 4em;
+    width: 5em;
+    background-color: rgb(48, 192, 37);
+    font-size: 2em;
+}
+/* child box font (1em=20px) margin(1em=20px)for only child box, width(4em*1em=4em), height(5em*1em=5em)  */
+#embox9{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    font-size: 20px;
+}
+#embox10{
+    height: 4em;
+    width: 5em;
+    background-color: orange;
+    font-size: 1em;
+    margin: 1em;
+}
+
+
+/* rem(root element) font size of root element is taken for the rem */
+/* if rem value is not given then the default value is taken as 16px */
+#rembox1{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    font-size: 20px;
+}
+#rembox2{
+    height: 4rem;
+    width: 5rem;
+    background-color: red;
+    font-size: 1rem;
+    margin: 1rem;
+}
+/* 1 rem=16px  if *{font-size:30px} then rem is 1rem = 30px */
+
+
+/* Other */
+
+
