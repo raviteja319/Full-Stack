@@ -1,3 +1,12 @@
+/*  css realted doubts and concepts can be found at gooogle (MDN css color)
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-decoration */
+    
+/* text-align */
+/* text align is the align ment of the text given for the text  */
+/* right, left, center, start, end */
+/* in currrent css3 insteadt of using right, left, this were used start, end */
+/* the alignment doesnt change based on the docment given it as per the identy given to it from the parent to child*/
+/* span is taken width is size of the text given */
 .div1text{
     text-align: center;
     background-color: rgb(62, 61, 42);
@@ -13,9 +22,7 @@ p{
 #heading1{
     text-align: center;
     color: rgb(216, 2, 2);
-  
 }
-
 #heading2{
     color: #45ff50;
 }
@@ -23,8 +30,106 @@ p{
     text-align: end;
     color: #8faf91;
 }
-/* text align is the align ment of the text given */
-/* right, left, center, start, left */
-/*  text-align is follow parent child method if a div tag class is given center all the heading and paragrapgh text are aligned at center  */
-/* span is taken width is size of the text given */
+
+/* text-decoration to draw the line in the text or remove the line for the text */
+.div2text{
+text-align: center;
+}
+#link1{
+    text-decoration-style:  wavy;
+    text-decoration-color: rgb(255, 0, 0);
+} 
+#link2{
+    text-decoration: none;
+    color: black;
+}
+#div2p{
+    text-decoration: underline;
+}
+#div2p1{
+    text-decoration: underline deeppink ;
+}
+#div2p2{
+    text-decoration: underline double;
+}
+#div2p3{
+    text-decoration: underline dotted ;
+}
+
+/* font-weight */
+/* to set the weight of the font 100 is light, 900 is bold */
+.div3text{
+    text-align: end;
+}
+#h1font{
+    font-weight: bold;
+}
+#h2font{
+    font-weight: bolder;
+}
+#h3font{
+    font-weight: lighter;
+}
+#h4font{
+    font-weight: normal;
+}
+#h5font{
+    font-weight: 100;
+}
+#h6font{
+    font-weight: 400;
+}
+#h7font{
+    font-weight: 900;
+}
+
+/* text-family */
+/* to set the font family for the text */
+/* multiple font families can be specified as a fallback as needed if the first one is not available the second one will be used */
+.div4text{
+    font-family: Arial, sans-serif;
+}
+.div5text{
+    font-family: "Times New Roman", Times, serif;
+    background-color: rgb(62, 61, 42);
+}
+
+/* Units in CSS  */
+/* 2 types one is absolute and the other is relative */
+/* absolute units: px, pt, pc, in, cm, mm */
+/* relative units: em, ex, ch, rem, vw, vh, vmin, vmax */
+/* the text size is mesured in px 1 inch=96px */
+#div5p{
+    font-size:18px;
+}
+
+/* line-height spacing the line */
+.div6text{
+    font-family: "Courier New", Courier, monospace;
+    line-height: 30px;
+    background-color: rgb(62, 61, 42);
+}
+/* text-transform set the casing format to uppercase, lowercase, or capitalize, none*/
+
+#div7p{
+    text-transform: uppercase;
+}
+
+#outer{
+    font-size: 25px;
+}
+#inner{
+    font-size: 10px;
+}
+/* TEXT PROPERTIES:
+        text-align(right, left, center, start, end)
+        text-decoration(inline, overline, line-through, none)
+        font-weight(normal, bold, bolder, lighter, 100, 200,...900)
+        font-family(arial, sans-serif, serif, monospace,times roman,....) 
+        font-size(12px, 14px, 16px, ...) 
+        line-height(normal, 1.5, 2, 30px, 40px, ...) 
+        text-transform (uppercase, lowercase, capitalize and none)
+*/
+
+
 

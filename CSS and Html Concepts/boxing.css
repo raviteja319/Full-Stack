@@ -1,0 +1,159 @@
+/*  BOX MODEL in CSS
+    Height : horizontal size of the box content is given by the height property
+    Width : vertical size of the box content is given by the width property
+    Padding : the space surrounding the content of the box
+    Border : the border around the content box and padding box
+    Margin : the space around the border of the box or the space between 2 or more border box*/
+
+/* Height */
+.div1box {
+    height: 100px;
+    background-color: lightblue;
+}
+
+/* Width */
+.div2box {
+    width: 300px;
+    background-color: lightgreen;
+}
+/* Border */
+/*  border-width : thin | medium | thick | length | 1PX......
+    border-style : none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset 
+    border-color : black */
+.div3box {
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(212, 29, 29);  
+}
+/* border shorthand form border:10px solid rgb(98, 75, 226); */
+/* the text align is based on the width given form the border */
+.div4box{
+    border:10px solid rgb(98, 75, 226);
+    text-align: center;
+    width: 300px;
+    height: 100px;
+}
+/* border radius the edges of the rectangle */
+/* this radius can be given in pixels (1px.....), or as a percentage (1% to 100%) 
+    When height and width are equal and 50% creates a circle */
+.div5box {
+    border: 2px solid rgb(226, 75, 83);
+    border-radius: 10px; 
+    width   : 500px;
+    height: 700px;
+}
+#bb1{
+    border: 2px dashed rgb(0, 75, 226);
+    border-radius: 10px;
+    width   : 200px;
+    height: 150px;
+    text-align: center;
+}
+#bb2{
+    border: 3px solid rgb(126, 56, 15);
+    border-radius: 10%;
+    width   : 200px;
+    height: 150px;
+    text-align: end;
+} 
+#bb3{
+    border: 5px solid rgb(0, 75, 226);
+    border-radius: 50%;
+    width   : 200px;
+    height: 200px;
+}
+
+
+/* padding:  the space between the content and the border measurdered in pixels (1px.....) */
+/* shorthand form padding: top right bottom left(padding:1px 2px 3px 4px); clockwise */
+.div6box {
+    padding: 20px;
+    background-color: lightyellow;
+    border: 2px solid rgb(0, 75, 226);
+    width: 200px;
+    height: 100px;
+}
+.div7box{
+    padding: 10px 20px 30px 10px;
+    background-color: lightyellow;
+    border: 2px solid rgb(0, 75, 226);
+    width: 100px;
+    height: 100px; 
+}
+
+/* margin:  the space around the border of the box or the space between 2 or more border box*/
+.div8box{
+    margin: 20px 30px 20px 30px;
+    padding: 25px;
+    background-color: lightyellow;
+    border: 10px solid rgb(0, 75, 226);
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+
+/* example work traffic light */
+.div9box{
+    width: 130px;
+    height: 400px;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px 30px 20px 30px;
+    padding-top: 10px;
+}
+.dbox1{
+    width: 100px;
+    height: 100px;
+    margin: 15px 15px 25px 15px;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+.dbox2{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    margin: 15px 15px 25px 15px;
+    border-radius: 50%;
+    text-align: center;
+}
+.dbox3{
+    width: 100px;
+    height: 100px;
+    margin: 15px 15px 25px 15px;
+    background-color: green;
+    border-radius: 50%;
+    text-align: center;
+}
+/* amazon search bar */
+/* the developer normally give padding and margin as 0 for the complete website at the start of the CSS file  if no mentioned also not a problem*/
+/*CSS code example: 
+    *{
+        margin: 0;
+        padding: 0;
+    }
+ */
+
+ /* the difference between padding(only for the content) and margin (the margin is the space between elements) */
+.div10box{
+    height: 60px;
+    background-color: rgb(3, 5, 9);
+    color: white;
+}
+#logo{
+    color: orange;
+    text-align: start;
+    font-size: 25px;
+}
+.atoz{
+    color: white;
+    text-decoration: none;
+    margin-right: 200px;
+}
+#searchbtn{
+    background-color: rgb(255, 153, 0);
+    color: whitesmoke;
+}
+

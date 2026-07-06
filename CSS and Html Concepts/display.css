@@ -1,0 +1,194 @@
+/* Display Property in CSS the way an element is displayed on the page 4 types: block, inline, inline-block, none */
+    /* Block occupy the entire width of the parent element or viewport
+        Eg: <div>, <h1> to <h6>, <p> */
+    /* Inline only takes up as much width as necessary (no margin and no padding) and does not start on a new line 
+        Eg: <span>, <a>,<input>,<img>,<button> */
+    /* Inline-block behaves like inline but can have width and height set margin padding for the element*/
+    /* None hides the element completely */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+    /* Block */
+    .div1{
+        display: block;
+        background-color: red;
+    }
+
+    /* Inline */
+    .div2{
+        display: inline;
+        background-color: yellow;
+    }
+
+    /* Converting a block to inline */
+    .div3{
+        display: inline;
+        background-color: blue;
+    }
+    .div4{
+        display: block;
+        background-color: green;
+    }
+
+    /* applying block for the box */
+
+    .div5{
+        height: 100px;
+        width: 100px;
+        padding: 25px;
+        margin: 25px;
+        display: block;
+    }
+    #div5red{
+        background-color: red;
+    }
+    #div5green{
+        background-color: green;
+    }
+    #div5blue{
+        background-color: blue;
+    }   
+
+    /* applying inline for the box */
+    /* When a div tag is converted to inline then it will only take up as much width size given */
+    /* NOTE: margins form the top and bottom will be ignored only sides will be taken into account */
+
+    .div6{
+        height: 100px;
+        width: 100px;
+        padding: 25px;
+        margin: 25px;
+        display: inline;
+    }
+    #div6red{
+        background-color: red;
+    }
+    #div6green{
+        background-color: green;
+    }
+    #div6blue{
+        background-color: blue;
+    } 
+    /* just hover the mouse over the h1 to understand to get clear understanding of div */
+    h1{
+        margin: 25px;
+        padding: 25px;
+    }
+    /* inline-block */
+    /* if we want to have both inline and block properties multiple elements in one line can use this property */
+    .div7{
+        height: 100px;
+        width: 100px;
+        padding: 25px;
+        margin: 25px;
+        display: inline-block;
+    }
+    #div7red{
+        background-color: red;
+    }
+    #div7green{
+        background-color: green;
+    }
+    #div7blue{
+        background-color: blue;
+    }   
+
+    /* None */
+    /* Hides the element completely the properties are written in HTML but not displayed CSS this is used to hide */
+    .div8{
+        display: inline-block;
+        padding: 25px;
+        margin: 25px;
+        background-color: yellow;
+    }
+    #div8none{
+        display: none;
+    }
+
+    /* Visibility */
+    /* Visibility property is used to hide the element but the space occupied by the element will be preserved */
+    .div9{
+        visibility: visible;
+        padding: 25px;
+        margin: 25px;
+        background-color: lightblue;
+        display : inline;
+    }
+    #div9hidden{
+        visibility: hidden;
+    }
+
+    /* Alpha Channel */
+    /* Controls the transparency of an element opacity of the color ranges from 0 to 1(1=fully opaque, 0=fully transparent) */
+    /* 1,0.99,0.98,...0.50,0.49,0.48,...0.01,0 ranges */
+    .div10{
+        padding:40px;
+        margin: 40px;
+        display: inline-block;
+        background-color: black;
+    }
+    #divAlpha{
+        background-color: rgba(255, 0, 0, 1);
+    }
+    #divAlpha2{
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+    #divAlpha3{
+        background-color: rgba(255, 0, 0, 0);
+    }
+
+    /* Example work with header and footer */
+
+    .headerdiv{
+        height:60px;
+        background-color: black;
+    }
+    .navicons{
+        margin-right: 200px;
+        color: white;
+        text-decoration: none;
+    }
+    #logo{
+        color: orange;
+        font-size: 25px;
+    }
+    #searchbtn{
+        background-color: orange;
+        color: white;
+        cursor: pointer;
+    }
+    /* when we hover over the search button mouse curser changes like pointer hand */
+    .div11{
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        margin: 20px;
+        display: inline-block;
+    }
+    #divred{
+        background-color: rgba(255, 0, 0, 1);
+    }
+    #divred1{
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+    #divred2{
+        background-color: rgba(255, 0, 0, 0.10);
+    }
+
+    .footerdiv{
+        height: 60px;
+        background-color: black;
+        text-align: center;
+        font-size: 15px;
+    }
+    .footertext{
+        color: white;
+        display: inline-block;
+        margin-top: 5px;
+        margin-right: 25px;
+        margin-left: 25px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
