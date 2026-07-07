@@ -1,0 +1,145 @@
+/* Position Property  */
+/* This property sets the elements position in the document */
+/* They are 4 types: Static, Relative, Absolute, Fixed */
+
+*{
+    padding:0;
+    margin:0;
+}
+/* Static : Its a default postion(The top, right, bottom, left and Z-index has no effect ) */
+/* the position is fixed no changes occured */
+.divbox1{
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+    margin-right:10px ;
+}
+#divs2{
+    position: static;
+    top:20px;
+    bottom: 10px;
+    z-index: 50px;
+}
+
+/* Relative: Its relative to its position(The top, right, bottom, left and Z-index will work ) */
+.divbox2{
+    height:100px;
+    width: 100px;
+    background-color: yellow;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    display: inline-block;
+    margin-right: 10px; 
+}
+#divr2{
+    position: relative;
+    top:20px; /*The box moves to bottom as 20px occupied at top */
+    right: 10px;    /*The box moves to left as 10px occupied at right */
+    z-index: 50px;
+}
+#divr4{
+    position: relative;
+    bottom:20px;
+    left: 10px;
+    z-index: 50px;
+}
+/* Absolute: Its relative to its position related to the parent elemant positioned inside and it position should not be static(The top, right, bottom, left and Z-index will work ) */
+/* If no postion is not given then it postions based on the viewport*/
+.divbox3{
+    height:100px;
+    width: 100px;
+    background-color: red;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    display: inline-block;
+    margin-right: 10px; 
+}
+#diva2{
+    position: absolute;
+    top:10px;
+    right:20px;
+    left:50%;/* based on the viewport size its positioned box on top of the current viewport */
+}
+#diva4{
+    position: absolute;
+    bottom:20px;/* the box moved to the bottom position of the current viewport */
+}
+
+/* Position Property for Absolute with parent */
+/* Note: to set child as absloute the parent need to be in relative postion to apply */
+/* If doubt watch the video https://www.youtube.com/watch?v=YEmdHbQBCSQ */
+.divboxp{
+    height:300px;
+    width: 300px;
+    background-color: green;
+    border: 2px black solid;
+    display: inline-block;
+    position: relative;
+}
+.divboxc{
+    height:100px;
+    width:100px;
+    background-color: bisque;
+    border:2px solid black;
+    display: inline-block;
+}
+#divac1{
+    position:absolute;
+    right:20px;
+}
+#divac2{
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+#divac3{
+    position:absolute;
+    top:5px;
+    left:0;
+}   
+
+/* Fixed: Position relative to the browser */
+/* fixed to the viewport */
+/* If doubt watch the video https://www.youtube.com/watch?v=YEmdHbQBCSQ */
+.divbox4{
+    height:30px;
+    width:100px;
+    background-color: blue;
+    border:2px solid black;
+    display: inline-block;
+}
+#divf1{
+    position: fixed;
+    top:0;
+    right:0;
+}
+/* this fixed can be used for the navbar, header, footer and for the in webpage */
+#divf2{
+    position: fixed;
+    top:50%;
+    right:5%;
+}
+#divf3{
+    position: fixed;
+    bottom:0;
+    width:100%;
+}
+
+
+/* Sticky: Position relative to the browser its positon set reached it stick to the position */
+/* Postion need to give mandotry */
+.divbox5{
+    height:30px;
+    width:100px;
+    background-color: gold;
+    border:2px solid black;
+    display: inline-block;
+    position: sticky;
+    top:0;
+    left:50%;
+}

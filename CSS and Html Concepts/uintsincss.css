@@ -171,6 +171,17 @@
 /* 1 rem=16px  if *{font-size:30px} then rem is 1rem = 30px */
 
 
-/* Other */
+/* Other  units are VH(Viewport Height) and VW(Viewport Width)*/
+/* the relative ranges from 1% to 100% size of view port 100%(fullsize of current viewport)*/
+#vhvwdiv{
+    height:100px;
+    width:100px;
+    background-color: yellow;
+}
+#vhvwdiv1{
+    height: 50vh;
+    width: 20vw;
+    background-color: red;
+}
 
 
