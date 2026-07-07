@@ -52,7 +52,7 @@
     }   
 
     /* applying inline for the box */
-    /* When a div tag is converted to inline then it will only take up as much width size given */
+    /* When a div tag is converted to inline then it will only take up as much width size given which include the text and padding of the element*/
     /* NOTE: margins form the top and bottom will be ignored only sides will be taken into account */
 
     .div6{
