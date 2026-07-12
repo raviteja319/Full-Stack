@@ -1,0 +1,193 @@
+/* Flexbox: Its a one dimensional layout method for arranging items in rows and columns */
+/*Eg: arranging the elements in nav bar  */
+/* Flex Box Layout */
+/* Flex Model:   */
+/* Flex container: the container(div, span, navbar, section) can be a flex when its display: flex; */
+/* Flex items: The items inside the flex container is flex items */
+/* Main axis: the horizontal axis in container */
+/* Cross axis: ther veritcal axis in container */
+/* Most often main axis is horizontal, cross axis is vertical*/
+/* Both axis are at 90degress */
+/* This axis can be changed based on the user usage main axis can be cross axis, cross axis can be main axis */
+/* Flex Properties: 
+                    flex-direction : direction of the flex items arranged in the flex box.(row, row-reverse, column, column-reverse)
+                    justify-content: alignment along the main axis.(flex-start/flex-end/center/space-evenly/space-around/space-between)
+                    flex-wrap:
+                    align-items: alignment along the cross axis(flex-start/flex-end/center/space-evenly/space-around/space-between)
+                    align-content */
+/* the flex items doesn't extend the container they try to fit in until the text limit is reached once they reached flex-items will extend the container box */
+
+/* Display flex row */
+*{
+    padding:0;
+    margin:0;
+}
+
+.container1{
+    height: 200px;
+    width:800px;
+    border: 2px solid black;
+    margin-bottom:10px ;
+    display: flex;/* the elements at center moves towards right when flex is applied */
+    flex-direction: row; /* the default direction is row for the flex horizonal main-axis */
+}
+.sbox{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+#box1{
+    background-color: red;
+}
+#box2{
+    background-color: yellow;
+}
+#box3{
+    background-color: green;
+}
+#box4{
+    background-color: blue;
+}
+#box5{
+    background-color: pink;
+}
+
+/* Display flex row reverse */
+.container2{
+    height: 200px;
+    width:800px;
+    border: 2px solid black;
+    margin-bottom:10px ;
+    display: flex;/* the elements at center moves towards right when flex is applied */
+    flex-direction: row-reverse; /* direction is rowreverse- for the flex horizonal main-axis -X to X and cross -Y to Y */
+}
+.sbox1{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+#box1{
+    background-color: red;
+}
+#box2{
+    background-color: yellow;
+}
+#box3{
+    background-color: green;
+}
+#box4{
+    background-color: blue;
+}
+#box5{
+    background-color: pink;
+}
+
+/* Display flex Column */
+.container3{
+    height: 200px;
+    width:800px;
+    border: 2px solid black;
+    margin-bottom:10px ;
+    display: flex;/* the elements at center moves towards right when flex is applied */
+    flex-direction: column; /* direction is rowreverse- for the flex horizonal main-axis Y  and cross-axis X */
+    /* the flex items try to fit in side the container actual size is 100px but ther are shortened*/
+}
+.sbox2{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+#box1{
+    background-color: red;
+}
+#box2{
+    background-color: yellow;
+}
+#box3{
+    background-color: green;
+}
+#box4{
+    background-color: blue;
+}
+#box5{
+    background-color: pink;
+}
+
+/* Display flex Column */
+.container4{
+    height: 100px;
+    width:800px;
+    border: 2px solid black;
+    margin-bottom:10px ;
+    display: flex;/* the elements at center moves towards right when flex is applied */
+    flex-direction: column-reverse; /* direction is rowreverse- for the flex horizonal main-axis -Y to Y  and cross-axis -X to X */
+    /* the flex items try to fit in side the container did not worked extend from the container */
+}
+.sbox3{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+#box1{
+    background-color: red;
+}
+#box2{
+    background-color: yellow;
+}
+#box3{
+    background-color: green;
+}
+#box4{
+    background-color: blue;
+}
+#box5{
+    background-color: pink;
+}
+
+/* Display justify-content: aligning the flex items along the cross axis */
+/* (flex-start, flex-end, center, space-around, space-between, space-evenly )  */
+.container5{
+    height: 200px;
+    width:800px;
+    border: 2px solid black;
+    margin-bottom:10px ;
+    display: flex;/* the elements at center moves towards right when flex is applied */
+    flex-direction: row;
+    /* justify-content:flex-start; */
+    /* justify-content:flex-end; */
+    /* justify-content:space-around; */
+    /* justify-content:space-between; */
+    /* justify-content:space-evenly; */
+    justify-content:center;
+    /* justify-content starts from the row positoning of the container box  */
+    /* flex-start : the flex-items of the flex container align to the at the start main-axis right at row*/
+    /* flex-end : the flex-items of the flex container align to the at the end at main-axis right at row*/
+    /* center : the items arew set at the center of the flex container */
+    /* space-around: starting and ending space is given to flex items and double space is given to between flex items */
+    /* space-between: the space is given in between flex items, starting and ending are attached with container*/
+    /* space-evenly: the space is given evenly between the flex items */
+    /* flex-direction: row-reverse; justify-content: flex-start; alignment -X to X (main-axis) */  
+    /* flex-direction: row-reverse; justify-content: flex-end; alignment -X to X (main-axis) at the start position*/
+}
+.sbox4{
+    height: 75px;
+    width: 75px;
+    border: 2px solid black;
+}
+#box1{
+    background-color: red;
+}
+#box2{
+    background-color: yellow;
+}
+#box3{
+    background-color: green;
+}
+#box4{
+    background-color: blue;
+}
+#box5{
+    background-color: pink;
+}
+
+

@@ -143,3 +143,45 @@
     top:0;
     left:50%;
 }
+
+/* Z-Index: It decides the stacking of elements*/
+/* Operlapping of elements over one other which element is to be top or bottom over one other  */
+/* top the Box 3  */
+.divbox6{
+    height: 100px;
+    width:100px;
+    border:2px solid black;
+    margin-right:10px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 100px;
+}
+#divz1{
+    background-color: blueviolet;
+    left: 50px;
+}
+#divz2{
+background-color: red;
+bottom: 15px;
+}
+#divz3{
+background-color: blue;
+right:60px;
+top:50px;
+}
+#divz4{
+background-color: green;
+right:120px;
+}
+#divz5{
+background-color: gold;
+right: 180px;
+bottom:10px;
+}
+#divz3{
+    z-index: 1; /* the elelment Box3 is topped here */
+}
+#divz5{
+    z-index: -1; /* the elelment Box3 is baccked here */
+}
+

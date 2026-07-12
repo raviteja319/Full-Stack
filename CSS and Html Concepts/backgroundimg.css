@@ -1,0 +1,74 @@
+/* Background Images : used to set the images in the back ground*/
+/* Unsplach images is copyright free images canbe used https://unsplash.com/ */ 
+/* background-image: url("copy the path of the image"); */
+*{
+    margin: 0;
+    padding: 0;
+}
+.divimg{
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    background-color: gold;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    align-content: center;
+    text-align: center;
+}
+#div1{
+    background-image: url("D:\luffy.jpg");
+}
+#div2{
+    background-image: url("D:\naruto_uzumaki.jpg");
+}
+#div3{
+    background-image: url("D:\spy_x_family.jpg");
+}
+
+/* Background-size: Its to sit size of image in the background */
+/* cover: It cover the entier given no empty space and fit it */
+#divc1{
+    background-image: url("D:\luffy.jpg");
+    background-size: cover;
+}
+#divc2{
+    background-image: url("D:\naruto_uzumaki.jpg");
+    background-size: cover;
+}
+#divc3{
+    background-image: url("D:\spy_x_family.jpg");
+    background-size: cover;
+}
+
+/* contain: It fits enter box and cover in the box given  */
+/* background-repeat: no-repeat the image will not repeat */
+#divco1{
+    background-image: url("D:\luffy.jpg");
+    background-size: contain;
+}
+#divco2{
+    background-image: url("D:\naruto_uzumaki.jpg");
+    background-size: contain;
+}
+#divco3{
+    background-image: url("D:\spy_x_family.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* auto: the image will set automatical */
+/* default and auto are same */
+#diva1{
+    background-image: url("D:\luffy.jpg");
+    background-size: auto;
+}
+#diva2{
+    background-image: url("D:\naruto_uzumaki.jpg");
+    background-size: auto;
+}
+#diva3{
+    background-image: url("D:\spy_x_family.jpg");
+    background-size: auto;
+}

@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* flex-shrink: It is applied on flex items to shrink for responsive page on view port */
+/* flex-shrink: 0; zero srink on this property */
+/* flex-shrink: 1; the flex items resize and fit to the container andit default value */
+/* we can use for individual items to shrink not to shrink eg:logos in the page */
+.container{
+    height:300px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.sbox{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+}
+#fibox1{
+    flex-shrink: 0;
+}
+#fibox2{
+    flex-shrink: 5;   /*  srink on this property 5 times small compare to others in the viewport full view (this is not used much)*/
+}
+
+
+/* flex-grow: It is applied on flex items to grow and fill for responsive page on view port */
+/* flex-grow: 0; zero grow on this property */
+/* flex-grow: 1; the flex items grow and fit to the container andit default value */
+/* we can use for individual items to grow not to grow eg:search bar */
+.container1{
+    height:300px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.sbox1{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+#fibox11{
+    flex-grow: 0;   /* zero grow on this property stays as original size */
+}
+
+#fibox22{
+    flex-grow: 5;   /*  grow on this property 5 times large compare to others in the viewport full view */
+}
+
+
+/* we can use max-width or max-height and min-width or min-height apply flex srink and flexgrow */
+.container2{
+    height:300px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.sbox2{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    min-width: 75px;
+}
+#fibox111{
+    flex-shrink: 0;   /* zero grow on this property stays as original size */
+}
+
+#fibox222{
+    flex-grow: 5;   /*  grow on this property 5 times large compare to others in the viewport full view */
+}
