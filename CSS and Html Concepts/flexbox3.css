@@ -18,7 +18,7 @@
 }
 .sbox{
     height: 100px;
-    width: 100px;
+    width: 120px;
     background-color: aqua;
     border: 2px solid black;
     display: flex;
@@ -36,7 +36,7 @@
 
 /* flex-grow: It is applied on flex items to grow and fill for responsive page on view port */
 /* flex-grow: 0; zero grow on this property */
-/* flex-grow: 1; the flex items grow and fit to the container andit default value */
+/* flex-grow: 1; the flex items grow and fit to the container and it default value */
 /* we can use for individual items to grow not to grow eg:search bar */
 .container1{
     height:300px;
@@ -50,7 +50,7 @@
 .sbox1{
     height: 100px;
     width: 100px;
-    background-color: aqua;
+    background-color: red;
     border: 2px solid black;
     display: flex;
     justify-content: center;
@@ -65,7 +65,7 @@
     flex-grow: 5;   /*  grow on this property 5 times large compare to others in the viewport full view */
 }
 
-
+/* min */
 /* we can use max-width or max-height and min-width or min-height apply flex srink and flexgrow */
 .container2{
     height:300px;
@@ -78,8 +78,8 @@
 }
 .sbox2{
     height: 200px;
-    width: 200px;
-    background-color: aqua;
+    width: 120px;
+    background-color: yellow;
     border: 2px solid black;
     display: flex;
     justify-content: center;
@@ -87,10 +87,60 @@
     flex-shrink: 1;
     min-width: 75px;
 }
-#fibox111{
+#fiboxmin1{
     flex-shrink: 0;   /* zero grow on this property stays as original size */
 }
-
-#fibox222{
+#fiboxmin2{
     flex-grow: 5;   /*  grow on this property 5 times large compare to others in the viewport full view */
+}
+
+/* max */
+.container3{
+    height:300px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.sbox3{
+    height: 100px;
+    width: 200px;
+    background-color: green;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    max-width: 300px;
+}
+#fiboxmax1{
+    flex-grow: 0;   /* zero grow on this property stays as original size */
+}
+#fiboxmax2{
+    flex-grow: 5;   /*  grow on this property 5 times large compare to others in the viewport full view */
+}
+
+
+/* after the min width the elements starts overflow from the box to avoid this issue we use the media  */
+/* to aviod the over flow of the elements flex wrap and mediaq */
+.container4{
+    height: 800px;
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    gap: 10px;
+}
+.sbox4{
+    flex-shrink: 1;
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    border: 2px solid black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
