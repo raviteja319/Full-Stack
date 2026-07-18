@@ -124,10 +124,11 @@
 
 
 /* after the min width the elements starts overflow from the box to avoid this issue we use the media  */
-/* to aviod the over flow of the elements flex wrap and mediaq */
+/* to aviod the over flow of the elements flex wrap and mediaqueary */
+/* mediaqueary can written in @media (max-width:830px), @media (min-width:500px), @media (min-width:300px) and (max-width:500px) */
 .container4{
     height: 800px;
-    width: 750px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -136,11 +137,70 @@
 }
 .sbox4{
     flex-shrink: 1;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     background-color: orange;
     border: 2px solid black; 
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 150px;
 }
+
+@media (max-width:830px){
+     .container4{
+        flex-wrap: wrap;
+        align-content: flex-start; /* this is given so that no space is taken between one cross axis and other cross axis */
+        padding: 10px;
+    }
+}
+@media (min-width:300px) and (max-width:500px){
+    .sbox4{
+        background-color: rgb(110, 173, 218);
+    }
+}
+@media (max-width:300px){
+     .container4{
+        flex-wrap: wrap;
+        align-content: flex-start; /* this is given so that no space is taken between one cross axis and other cross axis */
+        padding: 10px;
+    }
+    .sbox4{
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    border: 2px solid black; 
+    }
+}
+
+
+
+/* align-self */
+.container5{
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    gap: 10px;
+}
+.sbox5{
+    height: 200px;
+    width: 200px;
+    background-color: mediumseagreen;
+    border: 2px solid black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+}
+#fiboxas1{
+    align-self: self-start;
+}
+#fiboxas5{
+    align-self: self-end;
+}
+/* align-self has higest property compare to the align-items and align content */
+/* align-self is applied on individual item */
+/* align-self is given top and align-items at top still it consider the align-self */

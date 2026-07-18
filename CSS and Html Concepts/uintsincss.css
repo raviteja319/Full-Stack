@@ -98,6 +98,7 @@
     font-size: 1em;
 }
 /* the font-size is doubled as parent is 20px and child is 2em=2*20=40px */
+/* if not given default size is 16px */
 #embox3{
     height: 100px;
     width: 100px;
