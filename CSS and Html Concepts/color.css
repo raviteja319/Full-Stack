@@ -47,6 +47,9 @@ h3{
 body{
     background-color: rgb(195, 180, 169);
 }
+body{
+    background-color: rgba(rgb(201, 119, 119), green, blue, alpha)
+}
 h4{
     color: #a41787;
     font-size: 20px;

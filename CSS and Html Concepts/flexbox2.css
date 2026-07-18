@@ -1,0 +1,138 @@
+/* Flex Properties: 
+                    flex-direction : direction of the flex items arranged in the flex box.(row, row-reverse, column, column-reverse)
+                    justify-content: to position flexitems along the main axis.(flex-start/flex-end/center/space-evenly/space-around/space-between)
+                    align-items: to position flexitems along the cross axis(flex-start/flex-end/center/space-evenly/space-around/space-between)
+                    flex-wrap: wrap can make the page responsive if no space for the items in same line move them to next line(wrap, nowrap, wrap-reverse)
+                    align-content: to control all the cross lines together we use align content(flex-start/flex-end/center/space-evenly/space-around/space-between) */
+
+
+/* To set align-items justify-content is mandatory as it is setting for main axis  */
+/* (space-around, space-between, space-evenly)to use both in justify-content and align-items for complex and more flex-items*/
+
+
+/* Display align items: aligning the flex items along the cross axis */
+/* (flex-start (flex items are arraged at the start of cross line) top of the box container
+    flex-end (flex items are arraged at the end of cross line) bottom of the box container
+    center (flex items are arraged at the center of cross line) center of the box container
+    space-around, space-between, space-evenly )  */
+
+/* align-items in  flex-direction: row */
+.container{
+    height: 500px;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom:10px ;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    /* align-items: flex-start;  */
+    /* align-items: flex-end; */
+    align-items: center;
+}
+.sbox{
+    height: 75px;
+    width: 75px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+/* align-items in  flex-direction: column */
+.container1{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom:10px ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    align-items: center;
+}
+.sbox1{
+    height: 70px;
+    width: 70px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+
+/*  Gap property(row-gap, column-gap) and Flex-wrap(wrap, nowrap, wrap-reverse)*/
+/* gap property: to set the gap between the flex items */
+/*  row-gap, column-gap are are most often use3d in grid box and used after applying align-content   */
+/* flex-wrap: wrap can make the page responsive if no space for the items in same line move them to next line */
+.container2{
+    height: 500px;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom:10px ;
+    display: flex;
+    gap:20px;
+    /* column-gap: 10px; */
+    /* row-gap: 10px; */
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    /* align-items: flex-start; */
+    /* align-items: space-around;*/
+    /* align-items: space-between; */
+    /* align-items: space-evenly */
+    /* align-items: flex-end; */
+    /* align-items: center */
+}
+.sbox2{
+    height: 75px;
+    width: 75px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+/* we have one cross axis and induvidual main axis while flex wraping */
+/* also the row gaps between the flex items is more */
+/* to solve this issue we use align content */
+
+
+
+/* align-content: to control all the cross lines together we use align content*/
+/* align items control the cross axis individually of each row where as the align content control all cross lines together */
+/* the aligncontent default value always is space-around in the css */
+.container3{
+    height: 500px;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom:10px ;
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    /* align-content: space-around;*/
+    /* align-content: flex-start; */
+    /* align-content: space-between; */
+    /* align-content: space-evenly; */
+    /* align-content: flex-end; */
+    align-content: center;
+} 
+.sbox3{
+    height: 75px;
+    width: 75px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+}
+
