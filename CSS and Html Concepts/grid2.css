@@ -1,1 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 /* grid alignment */
+/* in grid the containers items have diffrent size when there defined individually as item size is predefined */
+/* grid size is 300px and item size is 100px induvidually */
+.container1{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    gap: 1em;
+    justify-items: center;
+    align-items: center;
+}
+.item1{
+    height: 100px;
+    width: 100px;
+    padding: 2em;
+    background-color: aqua;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
