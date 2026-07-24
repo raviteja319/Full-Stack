@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container1{
+    display: grid;
+    height:600px;
+    width:600px;
+    background-color: rgb(49, 53, 53);
+    justify-content: center;
+    align-content: center;
+}   
+.item1{
+    padding: 2em;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}

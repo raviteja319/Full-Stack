@@ -6,21 +6,83 @@
 /* grid alignment */
 /* in grid the containers items have diffrent size when there defined individually as item size is predefined */
 /* grid size is 300px and item size is 100px induvidually */
+/* the items align to the indivial items box of the grid  */
+/* justify-content(start, end, center) */
+/* align-content(start, end, center) */
+
+
 .container1{
+    border: 2px solid black;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
     gap: 1em;
-    justify-items: center;
-    align-items: center;
+    justify-items: center; /* justify-items for horizantal items of paricular grid box */
+    align-items: center; /* align-items for vertical items of paricular grid box */
+    justify-content: center; /* justify-content set horizantal width in grid container and if container is not given occupy full size of the viewport */
+    align-content: center; /* align-content set vertically in grid container in viewport if container height is not given it is aligned at the its postion center  */
 }
 .item1{
     height: 100px;
     width: 100px;
-    padding: 2em;
+    padding: 1em;
     background-color: aqua;
     text-align: center;
     color: white;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* grid with container  */
+.container2{
+    height: 800px;
+    width:800px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 1em;
+    justify-items: center;
+    align-items: center; 
+    justify-content: center; 
+    align-content: center; /* align-content container height is given it is aligned at the given center or start or end  */
+}
+.item2{
+    height: 100px;
+    width: 100px;
+    padding: 1em;
+    background-color: aqua;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+
+/* grid with full height */
+.container3{
+    height: 100vh;
+    /* full height */
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 1em;
+    justify-items: center; 
+    align-items: center; 
+    justify-content: center; 
+    align-content: center; /* align-content set vertically in grid container in 100vh viewport height it is aligned at the center to  */
+}
+.item3{
+    height: 100px;
+    width: 100px;
+    padding: 2em;
+    background-color: yellow;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    color: red;
     font-size: 1.5rem;
     border: 2px solid black;
     border-radius: 10px;

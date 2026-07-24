@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* when rows are add removed grid size may differ to reduce this we use implicity */
+/* implicity grids: automization of grind same size */
+
+/* with no implicity grid */
+.container1{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 1em;
+}
+.item1{
+    padding: 2em;
+    background-color: aqua;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* with implicity grid */
+.container2{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    grid-auto-rows: 200px;
+    gap: 1em;
+    justify-content: center;
+    align-content: center;
+}
+.item2{
+    padding: 2em;
+    background-color: rgb(190, 85, 85);
+    text-align: center;
+    color: blue;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* grid row auto flow */
+/* when new elements are added in new row of grid those elements automatically the get same size as default elements in row */
+.container3{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-auto-rows: 200px;
+    grid-auto-flow: row;
+    gap: 1em;
+    justify-content: center;
+    align-content: center;
+}
+.item3{
+    padding: 2em;
+    background-color:pink;
+    text-align: center;
+    color: red;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* grid column auto flow */
+/* when new elements are added automatically in the grid to get the grid size and its default value is row */
+/* if column elements are set grid-auto-columns we get only one column */
+/* this can use in netflix */
+.container4{
+    display: grid;
+    grid-auto-columns: 200px;
+    grid-auto-rows: 200px;
+    grid-auto-flow: column;
+    gap: 1em;
+}
+.item4{
+    background-color:black;
+    text-align: center;
+    color: red;
+    font-size: 3.5rem;
+    font-style: times;
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}

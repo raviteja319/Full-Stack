@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container1,
+.container2,
+.container3,
+.container4,
+.container5,
+.container6 {   
+    margin-bottom: 5em;
+}
+/* Bento i2box grid */
+/* multiple rows and colums in one set like Japanese Lunch i2box */
+/* height: 100vh;  Fallback for older browsers */
+/* height: 100dvh; dvh: dynamic viewport height  view port size acctually is 768 */
+.container1 {
+    height:100dvh;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);/* to avoid writing multiple times from the grid-template-columns: repeat(4, 200px); */
+    grid-auto-rows: 200px;
+    gap: 1em;
+    grid-template-areas:"i1box1 i1box2 i1box2 i1box3" 
+                        "i1box7 i1box7 i1box7 i1box7"
+                        "i1box4 i1box4 i1box5 i1box6";
+    justify-content: center;
+    align-content: center;
+}   
+.item1 {
+    padding: 2em;
+    background-color: aqua;
+    color: white; 
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+/* grid media quarey */
+.container2{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-auto-rows: 200px;
+    gap: 1em;
+    grid-template-areas:"i2box1 i2box2 i2box2 i2box3" 
+                        "i2box1 i2box4 i2box5 i2box6"
+                        "i2box1 i2box7 i2box7 i2box8"
+                        "i2box1 i2box9 i2box9 i2box9";
+    justify-content: center;
+    align-content: center;
+}
+@media(max-width:850px){
+    .container2{
+        grid-template-columns: repeat(3,200px);
+        grid-auto-rows: 200px;
+        grid-template-areas:"i2box1 i2box2 i2box2 " 
+                        "i2box1 i2box3 i2box4"
+                        "i2box1 i2box5 i2box6"
+                        "i2box1 i2box7 i2box7"
+                        ". i2box8 . "
+                        "i2box9 i2box9 i2box9";
+    }
+}
+@media(max-width:658px){
+    .container2{
+        grid-template-columns: repeat(2,200px);
+        grid-auto-rows: 200px;
+        grid-template-areas:" i2box2 i2box2 " 
+                        "i2box1 i2box3 "
+                        "i2box1 i2box4 "
+                        "i2box1 i2box5 "
+                        "i2box1 i2box6 "
+                        "i2box7 i2box8 "
+                        "i2box9 i2box9 ";
+    }   
+}
+.item2{
+    padding: 2em;
+    background-color: rgb(190, 85, 85);
+    text-align: center;
+    color: blue;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Bento grid auto media quarey */
+.container3{
+    display: grid;
+    grid-auto-columns: 200px;
+    grid-auto-rows: 200px;
+    gap: 1em;
+    grid-template-areas: "i3box1 i3box2 i3box2"
+                        "i3box1 i3box3 i3box4"
+                        "i3box1 i3box5 i3box4"
+                        "i3box7 i3box7 i3box6"
+                        "i3box7 i3box7 i3box6";
+    justify-content: center;
+    align-content: center;
+}
+.item3{
+    padding:2em;
+    font-size: 1.5em;
+    background-color: orange;
+    border: 2px solid green;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:650px){
+    .container3{
+        grid-template-areas: "i3box1 i3box3"
+                        "i3box1 ."
+                        "i3box1 i3box5"
+                        "i3box2 i3box2"
+                        "i3box4 i3box6"
+                        "i3box4 i3box6"
+                        "i3box7 i3box7"
+                        "i3box7 i3box7";
+    }
+}
