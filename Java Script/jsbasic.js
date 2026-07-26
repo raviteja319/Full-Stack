@@ -24,6 +24,11 @@
 // 20.95 + 7.99
 // 28.89999999999994 is the result 
 
-// Math.round(2095+799)/100
+// Math.round(2095+799)/100 
 // 28.84
 // rounding send to the nearest number 0 to 5 its preseeding and 6 to 9 its above number
+
+// Concatination of string : joining of 2 
+// 'work'+ 'time'
+// worktime
+
