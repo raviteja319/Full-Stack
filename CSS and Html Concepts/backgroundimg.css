@@ -17,7 +17,7 @@
     text-align: center;
 }
 #div1{
-    background-image: url("D:\luffy.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_8j2fDx5liInfj-eY7rxLPSHk-7KuyNQ04D6RdGd4ZkT4iAC7BJ9mAYFP1iVyYfnl5eJxnIcrBoeBjinYZD2Tn4UfSNbqPPzk550McKs&s=10");
 }
 #div2{
     background-image: url("D:\naruto_uzumaki.jpg");
@@ -29,7 +29,7 @@
 /* Background-size: Its to sit size of image in the background */
 /* cover: It cover the entier given no empty space and fit it */
 #divc1{
-    background-image: url("D:\luffy.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_8j2fDx5liInfj-eY7rxLPSHk-7KuyNQ04D6RdGd4ZkT4iAC7BJ9mAYFP1iVyYfnl5eJxnIcrBoeBjinYZD2Tn4UfSNbqPPzk550McKs&s=10");
     background-size: cover;
 }
 #divc2{
@@ -44,7 +44,7 @@
 /* contain: It fits enter box and cover in the box given  */
 /* background-repeat: no-repeat the image will not repeat */
 #divco1{
-    background-image: url("D:\luffy.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_8j2fDx5liInfj-eY7rxLPSHk-7KuyNQ04D6RdGd4ZkT4iAC7BJ9mAYFP1iVyYfnl5eJxnIcrBoeBjinYZD2Tn4UfSNbqPPzk550McKs&s=10");
     background-size: contain;
 }
 #divco2{
@@ -61,7 +61,7 @@
 /* auto: the image will set automatical */
 /* default and auto are same */
 #diva1{
-    background-image: url("D:\luffy.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_8j2fDx5liInfj-eY7rxLPSHk-7KuyNQ04D6RdGd4ZkT4iAC7BJ9mAYFP1iVyYfnl5eJxnIcrBoeBjinYZD2Tn4UfSNbqPPzk550McKs&s=10");
     background-size: auto;
 }
 #diva2{
