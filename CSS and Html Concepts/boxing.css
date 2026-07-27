@@ -142,16 +142,19 @@
     background-color: rgb(3, 5, 9);
     color: white;
 }
+
 #logo{
     color: orange;
     text-align: start;
     font-size: 25px;
 }
+
 .atoz{
     color: white;
     text-decoration: none;
     margin-right: 200px;
 }
+
 #searchbtn{
     background-color: rgb(255, 153, 0);
     color: whitesmoke;
