@@ -1,0 +1,57 @@
+/* transition allows to tansition between 2 states of an elements */
+/* transation funtionalitys: 
+        transition-property: theproperty we want to add(font-size, color,..etc)
+        transition-duration: how many sec to reach that effect (2s/2ms);
+        transition-timing-function: the effect type we want (ease-in, ease-out, linear, steps, ease-in-out..etc) ;
+        transition-delay: 1s; */
+.box1{
+    background-color: #7fffd4;
+    border: 2px solid black;
+    height: 10em;
+    width: 10em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition-property: all; /* it applys all fields of the current box*/
+    transition-duration: 2s;
+    transition-timing-function:ease-in-out;
+    transition-delay: 0.5s; 
+}
+
+/* hover moving the cousrse to the nearest element to get the effect */
+.box1:hover{
+    background-color: blue;
+    border: 2px solid black;
+    color: azure;
+    font-size: 2em;
+    font-weight: 800;
+    height: 10em;
+    width: 10em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* the active property set mose click on the elemet it changes */
+.box1:active{
+    background-color: red;
+    color: beige;
+    border: 2px solid rgb(36, 79, 207);
+}
+
+.box2 {
+    background-color: hsl(43, 100%, 75%);
+    border: 2px solid black;
+    height: 10em;
+    width: 10em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition-property: font-size:; 
+    transition-duration: 2s;
+    transition-timing-function:ease-in-out;
+    transition-delay: 0.5s; 
+}
